@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research resources — tools, textbooks, courses, and various useful links curated by Wim Louw">
+  <title>Resources · Wim Louw</title>
+  <link rel="icon" href="glider.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="container">
+    <header>
+      <nav aria-label="Site navigation">
+        <a href="index.html" class="nav-home">Wim Louw</a>
+        <ul class="nav-links">
+          <li><a href="resources.html" class="active">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <h1>Research Resources</h1>
+      <p class="resources-intro">Tools, textbooks, courses — various useful links.</p>
+
+      <nav class="toc" aria-label="Page sections">
+        <p class="toc-title">Sections</p>
+        <ul class="toc-list">
+          <li><a href="#general">General</a></li>
+          <li><a href="#coding-and-data">Coding &amp; Data</a></li>
+          <li><a href="#methods-and-stats">Methods &amp; Stats</a></li>
+          <li><a href="#data-collection">Data Collection</a></li>
+          <li><a href="#dataviz">Dataviz</a></li>
+          <li><a href="#llms">LLMs</a></li>
+          <li><a href="#nlp">NLP</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#fitness">Fitness</a></li>
+        </ul>
+      </nav>
+
+      <!--
+        HOW TO ADD A RESOURCE
+        ─────────────────────
+        Basic link:
+          <li><a href="URL" target="_blank" rel="noopener noreferrer">Title</a> — short description</li>
+
+        Tagged link (book / paper only):
+          <li><span class="tag">[book]</span> Author's <a href="URL" target="_blank" rel="noopener noreferrer">Title</a></li>
+
+        To add a new section: copy an <h2 id="..."> + <ul> block and add it to the TOC nav above.
+      -->
+
+      <!-- General -->
+      <h2 id="general">General</h2>
+      <ul>
+        <li><a href="https://kagi.com/" target="_blank" rel="noopener noreferrer">Kagi</a> — a paid ad-free search engine with bells and whistles</li>
+        <li><a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a> — take notes</li>
+        <li><a href="https://bear.app/" target="_blank" rel="noopener noreferrer">Bear</a> — take notes</li>
+        <li><a href="https://www.overleaf.com/" target="_blank" rel="noopener noreferrer">Overleaf</a> — collaborative LaTeX</li>
+        <li><a href="https://mermaid.live/" target="_blank" rel="noopener noreferrer">Mermaid</a> — draw diagrams</li>
+        <li><a href="https://www.airtable.com/" target="_blank" rel="noopener noreferrer">Airtable</a> — no-code database builder with a spreadsheet interface</li>
+        <li><a href="https://toggl.com/" target="_blank" rel="noopener noreferrer">Toggl</a> — tracking your time</li>
+        <li><a href="https://zapier.com/" target="_blank" rel="noopener noreferrer">Zapier</a> — automating stuff</li>
+        <li>Julia Evans on <a href="https://jvns.ca/blog/good-questions/" target="_blank" rel="noopener noreferrer">How to Ask Good Questions</a></li>
+        <li>Trey Causey's <a href="https://medium.com/@treycausey/do-you-have-time-for-a-quick-chat-c3f7e46de89d" target="_blank" rel="noopener noreferrer">Do You Have Time for a Quick Chat?</a></li>
+        <li>Chicago Booth <a href="https://www.chicagobooth.edu/review/clark-center-panels#sort=%40articledate%20descending" target="_blank" rel="noopener noreferrer">Clark Center Panels</a> — regularly polls three diverse panels of expert economists</li>
+        <li><a href="https://voxdev.org/voxdevlit" target="_blank" rel="noopener noreferrer">VoxDevLits</a> — living literature reviews on policy-relevant topics in development economics</li>
+        <li><a href="https://ungated.research.bowdoin.edu/" target="_blank" rel="noopener noreferrer">Ungated Research</a> — publicly available working papers for research in leading economics journals</li>
+      </ul>
+
+      <!-- Coding and Data -->
+      <h2 id="coding-and-data">Coding &amp; Data</h2>
+      <ul>
+        <li><span class="tag">[book]</span> <a href="https://r4ds.hadley.nz/" target="_blank" rel="noopener noreferrer">R for Data Science 2e</a></li>
+        <li><span class="tag">[book]</span> Kieran Healy's <a href="https://plain-text.co/" target="_blank" rel="noopener noreferrer">The Plain Person's Guide to Plain Text Social Science</a></li>
+        <li><a href="https://quarto.org/" target="_blank" rel="noopener noreferrer">Quarto</a> — "An open-source scientific and technical publishing system"</li>
+        <li><a href="https://posit.co/download/rstudio-desktop/" target="_blank" rel="noopener noreferrer">RStudio Desktop</a> IDE</li>
+        <li><a href="https://github.com/posit-dev/positron" target="_blank" rel="noopener noreferrer">Positron on GitHub</a> IDE</li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> — version control</li>
+        <li><a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer">GitLab</a> — version control</li>
+        <li><span class="tag">[paper]</span> Karl Broman &amp; Kara Woo on <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989" target="_blank" rel="noopener noreferrer">Data Organization in Spreadsheets</a></li>
+        <li><span class="tag">[paper]</span> Hadley Wickham's <a href="https://vita.had.co.nz/papers/tidy-data.pdf" target="_blank" rel="noopener noreferrer">Tidy Data</a></li>
+        <li>Julia Evans' <a href="https://wizardzines.com/zines/oh-shit-git/" target="_blank" rel="noopener noreferrer">Oh Shit, Git!</a> zine</li>
+      </ul>
+
+      <!-- Methods and Stats -->
+      <h2 id="methods-and-stats">Methods &amp; Stats</h2>
+      <ul>
+        <li><a href="https://voxdev.org/topic/how-are-econometric-methods-applied-researchers-development-economics" target="_blank" rel="noopener noreferrer">How are econometric methods applied by researchers in development economics?</a> | VoxDev Blog</li>
+        <li><span class="tag">[book]</span> Ethan Bueno de Mesquita &amp; Anthony Fowler's <a href="https://press.princeton.edu/books/hardcover/9780691214368/thinking-clearly-with-data" target="_blank" rel="noopener noreferrer">Thinking Clearly with Data</a></li>
+        <li><span class="tag">[book]</span> Joshua Angrist &amp; Jörn-Steffen Pischke's <a href="https://www.masteringmetrics.com/" target="_blank" rel="noopener noreferrer">Mastering 'Metrics</a></li>
+        <li><span class="tag">[book]</span> Joshua D. Angrist &amp; Jörn-Steffen Pischke's <a href="https://www.mostlyharmlesseconometrics.com/" target="_blank" rel="noopener noreferrer">Mostly Harmless Econometrics</a></li>
+        <li><span class="tag">[book]</span> Aki Vehtari, Andrew Gelman, &amp; Jennifer Hill's <a href="https://avehtari.github.io/ROS-Examples/index.html" target="_blank" rel="noopener noreferrer">Regression and Other Stories</a></li>
+        <li><span class="tag">[paper]</span> Andrew Gelman, Aki Vehtari and others on <a href="https://arxiv.org/abs/2011.01808" target="_blank" rel="noopener noreferrer">Bayesian Workflow</a></li>
+        <li><span class="tag">[book]</span> Jeffrey Wooldridge's <a href="https://www.amazon.com/Introductory-Econometrics-Modern-Approach-MindTap-ebook/dp/B07M7LT597" target="_blank" rel="noopener noreferrer">Introductory Econometrics: A Modern Approach</a></li>
+        <li><span class="tag">[book]</span> Nick Huntington-Klein's <a href="https://theeffectbook.net/" target="_blank" rel="noopener noreferrer">The Effect</a></li>
+        <li><span class="tag">[book]</span> Scott Cunningham's <a href="https://mixtape.scunning.com/" target="_blank" rel="noopener noreferrer">Causal Inference: The Mixtape</a></li>
+        <li><span class="tag">[paper]</span> Susan Athey &amp; Guido W. Imbens' <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-economics-080217-053433" target="_blank" rel="noopener noreferrer">Machine Learning Methods That Economists Should Know About</a></li>
+        <li><span class="tag">[book]</span> Dani Rodrik's <a href="https://www.amazon.com/Economics-Rules-Rights-Wrongs-Science/dp/0393246418" target="_blank" rel="noopener noreferrer">Economics Rules</a></li>
+        <li><span class="tag">[paper]</span> Angus Deaton &amp; Nancy Cartwright's <a href="https://www.nber.org/papers/w22595" target="_blank" rel="noopener noreferrer">Understanding and Misunderstanding Randomized Controlled Trials</a></li>
+        <li><span class="tag">[book]</span> Graeme Blair, Alexander Coppock, &amp; Macartan Humphreys' <a href="https://book.declaredesign.org/" target="_blank" rel="noopener noreferrer">Research Design in the Social Sciences</a></li>
+        <li><span class="tag">[paper]</span> Sayash Kapoor and others — <a href="https://www.science.org/doi/10.1126/sciadv.adk3452" target="_blank" rel="noopener noreferrer">REFORMS: Consensus-based Recommendations for Machine-learning-based Science</a></li>
+        <li><span class="tag">[book]</span> Chester Ismay and Albert Kim's <a href="https://moderndive.com/" target="_blank" rel="noopener noreferrer">ModernDive Statistical Inference via Data Science in R</a></li>
+        <li><span class="tag">[book]</span> <a href="https://r.geocompx.org/" target="_blank" rel="noopener noreferrer">Geocomputation with R</a> — geographic data analysis, visualization and modeling by Robin Lovelace, Jakub Nowosad and Jannes Muenchow. See also the <a href="https://geocompx.org/" target="_blank" rel="noopener noreferrer">geocompx project</a></li>
+        <li><span class="tag">[paper]</span> Natalie Ayers, Gary King and others: <a href="https://gking.harvard.edu/2k1" target="_blank" rel="noopener noreferrer">Statistical Intuition Without Coding (or Teachers)</a></li>
+        <li><a href="https://seeing-theory.brown.edu/" target="_blank" rel="noopener noreferrer">Seeing Theory</a> — interactive stats 101 visualizations</li>
+        <li><a href="https://lindeloev.github.io/tests-as-linear/" target="_blank" rel="noopener noreferrer">Common statistical tests are linear models</a> by Jonas Kristoffer Lindeløv</li>
+        <li>IZA's <a href="https://wol.iza.org/subject-areas/data-and-methods" target="_blank" rel="noopener noreferrer">methods write-ups</a></li>
+        <li>Evidence in Governance and Politics (EGAP) <a href="https://egap.org/methods-guides/" target="_blank" rel="noopener noreferrer">Methods Guides</a></li>
+        <li>The World Bank's <a href="https://blogs.worldbank.org/en/impactevaluations/curated-list-our-postings-technical-topics-your-one-stop-shop-methodology-0" target="_blank" rel="noopener noreferrer">Curated List on Technical Topics</a></li>
+        <li>J-PAL's <a href="https://www.povertyactionlab.org/research-resources?view=toc" target="_blank" rel="noopener noreferrer">Research Resources</a></li>
+      </ul>
+
+      <!-- Data Collection -->
+      <h2 id="data-collection">Data Collection</h2>
+      <ul>
+        <li>J-PAL's resource on <a href="https://www.povertyactionlab.org/resource/survey-programming" target="_blank" rel="noopener noreferrer">survey programming</a> (small contribution by me)</li>
+        <li><a href="https://www.surveycto.com/" target="_blank" rel="noopener noreferrer">SurveyCTO</a> — see also the free <a href="https://www.surveycto.com/community-contract/" target="_blank" rel="noopener noreferrer">Community Subscription</a></li>
+        <li>J-PAL's <a href="https://www.povertyactionlab.org/resource/repository-measurement-and-survey-design-resources" target="_blank" rel="noopener noreferrer">Repository of measurement and survey design resources</a></li>
+      </ul>
+
+      <!-- Dataviz -->
+      <h2 id="dataviz">Dataviz</h2>
+      <ul>
+        <li><a href="https://www.data-to-viz.com/" target="_blank" rel="noopener noreferrer">From data to viz</a> — leads you to the most appropriate graph for your data, with code and common caveats</li>
+        <li><a href="https://rawgraphs.io/" target="_blank" rel="noopener noreferrer">RawGraphs</a></li>
+        <li><a href="https://public.tableau.com/app/discover" target="_blank" rel="noopener noreferrer">Tableau (public)</a></li>
+        <li><a href="https://www.datawrapper.de/" target="_blank" rel="noopener noreferrer">Datawrapper</a></li>
+        <li><a href="https://flourish.studio/" target="_blank" rel="noopener noreferrer">Flourish</a></li>
+        <li><a href="https://www.datavisualizationsociety.org/" target="_blank" rel="noopener noreferrer">Data Visualization Society</a></li>
+        <li>J-PAL's resource on <a href="https://www.povertyactionlab.org/resource/data-visualization" target="_blank" rel="noopener noreferrer">data visualization</a> (small contribution by me)</li>
+        <li><a href="https://dataxdesign.io/" target="_blank" rel="noopener noreferrer">Data by Design</a> — "An Interactive History of Data Visualization"</li>
+        <li>Frank Elavsky's <a href="https://chartability.github.io/POUR-CAF/" target="_blank" rel="noopener noreferrer">Chartability</a> — heuristics for accessible data visualizations</li>
+      </ul>
+
+      <!-- LLMs -->
+      <h2 id="llms">LLMs</h2>
+      <ul>
+        <li>GPTs: <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>, <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://www.meta.ai/" target="_blank" rel="noopener noreferrer">Meta AI (llama)</a>, <a href="https://mistral.ai/" target="_blank" rel="noopener noreferrer">Mistral</a>, <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-open-models/" target="_blank" rel="noopener noreferrer">Gemma</a></li>
+        <li><a href="https://www.promptingguide.ai/" target="_blank" rel="noopener noreferrer">Prompt Engineering Guide</a> — techniques and patterns for getting better results from LLMs</li>
+        <li>Google's <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">NotebookLM</a></li>
+        <li>The Financial Times' <a href="https://ig.ft.com/generative-ai/" target="_blank" rel="noopener noreferrer">Generative AI exists because of the transformer</a></li>
+        <li><a href="https://poloclub.github.io/transformer-explainer/" target="_blank" rel="noopener noreferrer">Transformer Explainer</a> — interactive visualization for learning about Transformers through GPT-2</li>
+        <li>Andrej Karpathy's <a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" rel="noopener noreferrer">Intro to Large Language Models</a> — an accessible one-hour overview</li>
+        <li>Ted Chiang's <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web" target="_blank" rel="noopener noreferrer">ChatGPT is a blurry JPEG of the web</a></li>
+        <li><span class="tag">[paper]</span> Michael Townsen Hicks, James Humphries &amp; Joe Slater's <a href="https://link.springer.com/article/10.1007/s10676-024-09775-5" target="_blank" rel="noopener noreferrer">ChatGPT is bullshit</a></li>
+        <li>Worth reading re copyright law: <a href="https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html" target="_blank" rel="noopener noreferrer">The New York Times' case against Microsoft and OpenAI</a></li>
+        <li>Jaron Lanier's <a href="https://www.newyorker.com/science/annals-of-artificial-intelligence/how-to-picture-ai" target="_blank" rel="noopener noreferrer">How to Picture A.I.</a></li>
+        <li><span class="tag">[paper]</span> Murray Shanahan's <a href="https://arxiv.org/abs/2212.03551" target="_blank" rel="noopener noreferrer">Talking About Large Language Models</a> — careful of anthropomorphizing LLMs</li>
+        <li><span class="tag">[paper]</span> Emily Bender, Timnit Gebru et al. <a href="https://dl.acm.org/doi/10.1145/3442188.3445922" target="_blank" rel="noopener noreferrer">On the Dangers of Stochastic Parrots</a></li>
+        <li>Simon Willison's <a href="https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/" target="_blank" rel="noopener noreferrer">Prompt injection and jailbreaking are not the same thing</a></li>
+        <li>Rohit Krishnan's <a href="https://www.strangeloopcanon.com/p/what-can-llms-never-do" target="_blank" rel="noopener noreferrer">What can LLMs never do?</a></li>
+        <li>Anthropic: <a href="https://www.anthropic.com/research/claude-character" target="_blank" rel="noopener noreferrer">Considerations in constructing Claude's character</a> — and Patrick House's complement: <a href="https://www.newyorker.com/science/annals-of-artificial-intelligence/the-lifelike-illusions-of-ai" target="_blank" rel="noopener noreferrer">The Lifelike Illusions of A.I.</a></li>
+        <li>Simon Willison's <a href="https://simonwillison.net/2023/Apr/2/calculator-for-words/" target="_blank" rel="noopener noreferrer">Think of language models like ChatGPT as a calculator for words</a> — see also <a href="https://simonwillison.net/2023/Dec/31/ai-in-2023/" target="_blank" rel="noopener noreferrer">"the weird intern"</a></li>
+        <li>Simon Willison's <a href="https://simonwillison.net/2023/Oct/23/embeddings/" target="_blank" rel="noopener noreferrer">Embeddings: What they are and why they matter</a></li>
+        <li>Vicki Boykis's list of <a href="https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e" target="_blank" rel="noopener noreferrer">"no-hype" reads on LLMs</a></li>
+        <li><span class="tag">[book]</span> <a href="https://press.princeton.edu/books/hardcover/9780691249131/ai-snake-oil" target="_blank" rel="noopener noreferrer">AI Snake Oil</a> by Arvind Narayanan and Sayash Kapoor</li>
+        <li>LLMs in production: <a href="https://hamel.dev/blog/posts/evals/" target="_blank" rel="noopener noreferrer">Hamel's "Your AI product needs evals"</a></li>
+        <li>The <a href="https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/" target="_blank" rel="noopener noreferrer">What We Learned from a Year of Building with LLMs</a> series by Eugene Yan, Bryan Bischof and others</li>
+        <li><a href="https://explosion.ai/blog/against-llm-maximalism" target="_blank" rel="noopener noreferrer">Against LLM maximalism</a> by Matthew Honnibal (Explosion, spaCy)</li>
+      </ul>
+
+      <!-- NLP -->
+      <h2 id="nlp">NLP</h2>
+      <ul>
+        <li><span class="tag">[book]</span> Emil Hvitfeldt and Julia Silge's <a href="https://smltar.com/" target="_blank" rel="noopener noreferrer">Supervised Machine Learning for Text Analysis in R</a></li>
+        <li><span class="tag">[book]</span> Julia Silge and David Robinson's <a href="https://www.tidytextmining.com/" target="_blank" rel="noopener noreferrer">Text Mining with R</a></li>
+        <li>The <a href="https://www.structuraltopicmodel.com/" target="_blank" rel="noopener noreferrer">STM</a> R package for structural topic modelling</li>
+        <li>The <a href="https://github.com/cbail/textnets" target="_blank" rel="noopener noreferrer">textnets</a> R package</li>
+        <li>The <a href="https://quanteda.io/" target="_blank" rel="noopener noreferrer">Quanteda</a> R package for working with text data</li>
+        <li><a href="https://maartengr.github.io/BERTopic/index.html" target="_blank" rel="noopener noreferrer">BERTopic</a> — Python package for topic modelling with embeddings</li>
+        <li><a href="https://spacy.io/usage/spacy-101" target="_blank" rel="noopener noreferrer"><code>spaCy</code></a> and their <a href="https://github.com/explosion/projects/tree/v3/pipelines" target="_blank" rel="noopener noreferrer">demo projects</a> for text categorization or custom Named Entity Recognition</li>
+      </ul>
+
+      <!-- Courses -->
+      <h2 id="courses">Courses</h2>
+      <ul>
+        <li>Harvard's <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank" rel="noopener noreferrer">CS50: Introduction to Computer Science</a></li>
+        <li>Harvard's <a href="https://cs50.harvard.edu/r/" target="_blank" rel="noopener noreferrer">CS50: Introduction to R</a></li>
+        <li>Grant McDermott's <a href="https://github.com/uo-ec607/lectures" target="_blank" rel="noopener noreferrer">Data science for economists</a></li>
+        <li><a href="https://econdl.github.io/" target="_blank" rel="noopener noreferrer">EconDL</a> — blog on deep learning applications in economics</li>
+      </ul>
+
+      <!-- Writing -->
+      <h2 id="writing">Writing</h2>
+      <ul>
+        <li><span class="tag">[book]</span> Benjamin Dreyer's <a href="https://www.penguinrandomhouse.com/books/232363/dreyers-english-by-benjamin-dreyer/" target="_blank" rel="noopener noreferrer">Dreyer's English: An Utterly Correct Guide to Clarity and Style</a> — see also Katy Waldman's review <a href="https://www.newyorker.com/books/page-turner/the-hedonic-appeal-of-dreyers-english" target="_blank" rel="noopener noreferrer">The Hedonic Appeal of "Dreyer's English"</a></li>
+        <li><span class="tag">[book]</span> Verlyn Klinkenborg's <a href="https://www.penguinrandomhouse.com/books/93789/several-short-sentences-about-writing-by-verlyn-klinkenborg/" target="_blank" rel="noopener noreferrer">Several Short Sentences About Writing</a></li>
+        <li><span class="tag">[book]</span> <a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo213648716.html" target="_blank" rel="noopener noreferrer">The Chicago Manual of Style, 18th Edition</a></li>
+      </ul>
+
+      <!-- Fitness -->
+      <h2 id="fitness">Fitness</h2>
+      <ul>
+        <li><span class="tag">[book]</span> Casey Johnston's <a href="https://www.couchtobarbell.com/" target="_blank" rel="noopener noreferrer">LIFTOFF: Couch to Barbell</a> — a great starting point for weight lifting</li>
+        <li>Megan Gallagher's <a href="https://www.strongerbytheday.app/" target="_blank" rel="noopener noreferrer">Stronger by the Day</a> — focused on the three main compound lifts, progressive overload at its core</li>
+        <li><a href="https://macrofactor.com/" target="_blank" rel="noopener noreferrer">Macrofactor</a> — no-nonsense nutrition tracker with a useful projection model</li>
+      </ul>
+    </main>
+
+    <footer>
+      &copy; Wim Louw
+    </footer>
+  </div>
+</body>
+</html>
