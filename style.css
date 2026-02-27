@@ -136,6 +136,13 @@ h2 {
   scroll-margin-top: 1.5rem;
 }
 
+h3 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 1.75rem 0 0.5rem;
+}
+
 p {
   margin: 0 0 1rem;
 }

@@ -51,6 +51,7 @@
           <li><span class="tag">[book]</span> Author's <a href="URL" target="_blank" rel="noopener noreferrer">Title</a></li>
 
         To add a new section: copy an <h2 id="..."> + <ul> block and add it to the TOC nav above.
+        To add a subsection within a section: use <h3> (no id needed, not in TOC).
       -->
 
       <!-- General -->
@@ -138,29 +139,50 @@
 
       <!-- LLMs -->
       <h2 id="llms">LLMs</h2>
+
+      <h3>Tools for coding with LLMs</h3>
       <ul>
-        <li>GPTs: <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>, <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://www.meta.ai/" target="_blank" rel="noopener noreferrer">Meta AI (llama)</a>, <a href="https://mistral.ai/" target="_blank" rel="noopener noreferrer">Mistral</a>, <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-open-models/" target="_blank" rel="noopener noreferrer">Gemma</a></li>
-        <li><a href="https://www.promptingguide.ai/" target="_blank" rel="noopener noreferrer">Prompt Engineering Guide</a> — techniques and patterns for getting better results from LLMs</li>
-        <li>Google's <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">NotebookLM</a></li>
+        <li><a href="https://claude.com/product/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></li>
+        <li><a href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">OpenAI Codex</a></li>
+        <li><a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a></li>
+      </ul>
+
+      <h3>Understanding LLMs</h3>
+      <ul>
         <li>The Financial Times' <a href="https://ig.ft.com/generative-ai/" target="_blank" rel="noopener noreferrer">Generative AI exists because of the transformer</a></li>
         <li><a href="https://poloclub.github.io/transformer-explainer/" target="_blank" rel="noopener noreferrer">Transformer Explainer</a> — interactive visualization for learning about Transformers through GPT-2</li>
         <li>Andrej Karpathy's <a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" rel="noopener noreferrer">Intro to Large Language Models</a> — an accessible one-hour overview</li>
+        <li>Quanta Magazine: <a href="https://www.quantamagazine.org/when-chatgpt-broke-an-entire-field-an-oral-history-20250430/" target="_blank" rel="noopener noreferrer">When ChatGPT Broke an Entire Field: An Oral History</a> — on the state of NLP</li>
+      </ul>
+
+      <h3>Ways of conceptualising LLMs</h3>
+      <ul>
+        <li>Sam Barrett's <a href="https://sbgeoaiphd.github.io/rotating_the_space/posture" target="_blank" rel="noopener noreferrer">Amplifiers of Epistemic Posture</a></li>
         <li>Ted Chiang's <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web" target="_blank" rel="noopener noreferrer">ChatGPT is a blurry JPEG of the web</a></li>
-        <li><span class="tag">[paper]</span> Michael Townsen Hicks, James Humphries &amp; Joe Slater's <a href="https://link.springer.com/article/10.1007/s10676-024-09775-5" target="_blank" rel="noopener noreferrer">ChatGPT is bullshit</a></li>
-        <li>Worth reading re copyright law: <a href="https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html" target="_blank" rel="noopener noreferrer">The New York Times' case against Microsoft and OpenAI</a></li>
-        <li>Jaron Lanier's <a href="https://www.newyorker.com/science/annals-of-artificial-intelligence/how-to-picture-ai" target="_blank" rel="noopener noreferrer">How to Picture A.I.</a></li>
-        <li><span class="tag">[paper]</span> Murray Shanahan's <a href="https://arxiv.org/abs/2212.03551" target="_blank" rel="noopener noreferrer">Talking About Large Language Models</a> — careful of anthropomorphizing LLMs</li>
-        <li><span class="tag">[paper]</span> Emily Bender, Timnit Gebru et al. <a href="https://dl.acm.org/doi/10.1145/3442188.3445922" target="_blank" rel="noopener noreferrer">On the Dangers of Stochastic Parrots</a></li>
-        <li>Simon Willison's <a href="https://simonwillison.net/2024/Mar/5/prompt-injection-jailbreaking/" target="_blank" rel="noopener noreferrer">Prompt injection and jailbreaking are not the same thing</a></li>
-        <li>Rohit Krishnan's <a href="https://www.strangeloopcanon.com/p/what-can-llms-never-do" target="_blank" rel="noopener noreferrer">What can LLMs never do?</a></li>
         <li>Anthropic: <a href="https://www.anthropic.com/research/claude-character" target="_blank" rel="noopener noreferrer">Considerations in constructing Claude's character</a> — and Patrick House's complement: <a href="https://www.newyorker.com/science/annals-of-artificial-intelligence/the-lifelike-illusions-of-ai" target="_blank" rel="noopener noreferrer">The Lifelike Illusions of A.I.</a></li>
-        <li>Simon Willison's <a href="https://simonwillison.net/2023/Apr/2/calculator-for-words/" target="_blank" rel="noopener noreferrer">Think of language models like ChatGPT as a calculator for words</a> — see also <a href="https://simonwillison.net/2023/Dec/31/ai-in-2023/" target="_blank" rel="noopener noreferrer">"the weird intern"</a></li>
-        <li>Simon Willison's <a href="https://simonwillison.net/2023/Oct/23/embeddings/" target="_blank" rel="noopener noreferrer">Embeddings: What they are and why they matter</a></li>
+      </ul>
+
+      <h3>Practical guides and workflows</h3>
+      <ul>
+        <li><a href="https://honnibal.dev/blog/llm-style-tips" target="_blank" rel="noopener noreferrer">LLM style tips</a> — Matthew Honnibal on getting better outputs</li>
+        <li><a href="https://psantanna.com/claude-code-my-workflow/" target="_blank" rel="noopener noreferrer">Claude Code: My Workflow</a> — a potential research/academic workflow by Pedro H. C. Sant'Anna</li>
+        <li>Simon Willison: <a href="https://simonwillison.net/guides/agentic-engineering-patterns/" target="_blank" rel="noopener noreferrer">Agentic engineering patterns</a></li>
+        <li>Oxide Computer: <a href="https://rfd.shared.oxide.computer/rfd/0576" target="_blank" rel="noopener noreferrer">Using LLMs at Oxide</a> — reflections on using LLMs responsibly within an organisation</li>
+      </ul>
+
+      <h3>Critical perspectives and general reading</h3>
+      <ul>
+        <li><span class="tag">[book]</span> <a href="https://press.princeton.edu/books/hardcover/9780691249131/ai-snake-oil" target="_blank" rel="noopener noreferrer">AI Snake Oil</a> by Arvind Narayanan and Sayash Kapoor — see also <a href="https://www.normaltech.ai/p/a-guide-to-understanding-ai-as-normal" target="_blank" rel="noopener noreferrer">A Guide to Understanding AI as Normal Technology</a></li>
         <li>Vicki Boykis's list of <a href="https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e" target="_blank" rel="noopener noreferrer">"no-hype" reads on LLMs</a></li>
-        <li><span class="tag">[book]</span> <a href="https://press.princeton.edu/books/hardcover/9780691249131/ai-snake-oil" target="_blank" rel="noopener noreferrer">AI Snake Oil</a> by Arvind Narayanan and Sayash Kapoor</li>
-        <li>LLMs in production: <a href="https://hamel.dev/blog/posts/evals/" target="_blank" rel="noopener noreferrer">Hamel's "Your AI product needs evals"</a></li>
-        <li>The <a href="https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/" target="_blank" rel="noopener noreferrer">What We Learned from a Year of Building with LLMs</a> series by Eugene Yan, Bryan Bischof and others</li>
-        <li><a href="https://explosion.ai/blog/against-llm-maximalism" target="_blank" rel="noopener noreferrer">Against LLM maximalism</a> by Matthew Honnibal (Explosion, spaCy)</li>
+        <li>Jessica Hullman: <a href="https://statmodeling.stat.columbia.edu/2025/06/05/when-are-ai-ml-models-unlikely-to-help-with-decision-making/" target="_blank" rel="noopener noreferrer">When are AI/ML models unlikely to help with decision-making?</a></li>
+        <li>Simon Willison: <a href="https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/" target="_blank" rel="noopener noreferrer">The Lethal Trifecta</a></li>
+        <li>Simon Couch: <a href="https://www.simonpcouch.com/blog/2026-01-20-cc-impact/" target="_blank" rel="noopener noreferrer">An interesting breakdown of AI energy use</a> — a rough calculation of personal usage and how to put it in perspective</li>
+      </ul>
+
+      <h3>Staying up to date</h3>
+      <ul>
+        <li><a href="https://simonwillison.net/" target="_blank" rel="noopener noreferrer">Simon Willison's blog</a></li>
+        <li>VoxDev: <a href="https://voxdev.org/topic/ai-and-development-economics-early-evidence-and-how-keep" target="_blank" rel="noopener noreferrer">AI and Development Economics — Early Evidence and How to Keep Up</a> — resources compiled for keeping up with what's going on from a development economics perspective</li>
       </ul>
 
       <!-- NLP -->
